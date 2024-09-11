@@ -3,8 +3,7 @@
 import Foundation
 
 
-typealias FlowObserve = FlowObserved & FlowObserving
-
+public typealias FlowObserve = FlowObserved & FlowObserving
 
 public protocol FlowObserved: AnyObject {
     typealias FlowObservable<Value>  = ObservableWrapper<Self, Value>
