@@ -6,9 +6,9 @@ import Foundation
 public typealias FlowObserve = FlowObserved & FlowObserving
 
 public protocol FlowObserved: AnyObject {
-    typealias FlowObservable<Value>  = ObservableWrapper<Self, Value>
+    public typealias FlowObservable<Value>  = ObservableWrapper<Self, Value>
 
-    typealias Weak<Value: AnyObject>  = WeakWrapper<Self, Value>
+    public typealias Weak<Value: AnyObject>  = WeakWrapper<Self, Value>
 }
 
 public typealias ObserverTable = FlowUnionObserver
