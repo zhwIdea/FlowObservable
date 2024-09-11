@@ -18,7 +18,7 @@ protocol FlowCompatible {
 }
 
 extension FlowCompatible {
-    var flowWra: FlowWrapper<Self> {
+   public var flowWra: FlowWrapper<Self> {
         get { FlowWrapper(self) }
         set {}
     }
